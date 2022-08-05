@@ -14,6 +14,7 @@ summ(1, "2", "3", 5, "abc");
 
 // second option
 
+
 const sum = (...arr) =>
   arr.filter(Number).reduce((a, c) => (a += Number(c)), 0);
 
