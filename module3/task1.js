@@ -1,10 +1,8 @@
 /* Task 1 */
 function rememberResult(initialValue) {
-  let count = initialValue
+  let result = initialValue;
   return function(func) {
-    let result = func(rememberResult(count));
-    count = result;
-    return count;
+    return result = func(result);
   };
 }
 
